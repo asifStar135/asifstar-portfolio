@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import funmedia from "../../Assets/Projects/funmedia.png"
+import crud from "../../Assets/Projects/crud.png"
+import foodmart from "../../Assets/Projects/foodmart.png"
+import weather from "../../Assets/Projects/weather.png"
+import userApi from "../../Assets/Projects/user-api.png"
+
 
 function Projects() {
   return (
@@ -23,7 +23,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={funmedia}
               isBlog={false}
               title="FunMedia"
               description="A fullstack social app built using MERN with bootstrap, JWT authentication and bcrypt password hashing. A User can creat-read-update-delete his/her account as well as post images, like other posts and many more stuffs. For media stuffs, I've used cloudinary."
@@ -33,7 +33,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={crud}
               isBlog={false}
               title="MERN - CRUD"
               description="This is my first MERN project which is built on the basic DB operatioins - Create-Read-Update-Delete. Here you can create yout account with profile picture and bio along with hashed password, update all these and find out other users in the network."
@@ -43,7 +43,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={userApi}
               isBlog={false}
               title="User Authentication API"
               description="This is a well-structured (Node + Express).Js API collection for creating any user related application. This API contains forgot-password functionality that works with a verification link and changes the password. Also updating the details are also supported."
@@ -53,7 +53,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={weather}
               isBlog={false}
               title="WeatherBuddy"
               description="A very simple but useful frontend UI for fetching the weather details like temperature, humidity, sunset, sunrise, wind etc. You can search any city to view its real time weather condition. I've user REST API for fetching weather data of specific city and bootstrap for designing."
@@ -64,7 +64,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={foodmart}
               isBlog={false}
               title="Food-Mart"
               description="This is a very basic React.Js UI for a restaurant specifying the different types of menu. I've used a static API and classified the items according to its category - Breakfast, Lunch, Evening and Dinner."

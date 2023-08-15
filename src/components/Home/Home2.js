@@ -34,7 +34,7 @@ function Home2() {
                 <b className="purple"> Fullstack Web development </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Data Science
+                  Cloud Computing
                 </b>
               </i>
               <br />

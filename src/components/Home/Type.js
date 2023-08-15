@@ -7,11 +7,10 @@ function Type() {
       options={{
         strings: [
           "CSE Final Yr Student . .",
-          "Software Developer . .",
           "MERN Stack Developer . . ",
+          "Competitive Programmer . .",
           "Open Source Contributor . .",
           "Backend (NodeJs) Developer . .",
-          "Competitive Programmer . .",
           "Problem Solver . ."
         ],
         autoStart: true,
