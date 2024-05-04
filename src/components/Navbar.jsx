@@ -5,14 +5,12 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -53,33 +51,34 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item
-            onClick={() => setPath("/")}>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}
-               className={path == "/" ? "nav-active" : "not-active"} >
+            <Nav.Item onClick={() => setPath("/")}>
+              <Nav.Link
+                as={Link}
+                to="/"
+                onClick={() => updateExpanded(false)}
+                className={path == "/" ? "nav-active" : "not-active"}
+              >
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item
-            onClick={() => setPath("/about")}>
+            <Nav.Item onClick={() => setPath("/about")}>
               <Nav.Link
                 as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
-                className={path == "/about" ? "nav-active" : "not-active"} 
+                className={path == "/about" ? "nav-active" : "not-active"}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item
-            onClick={() => setPath("/project")}>
+            <Nav.Item onClick={() => setPath("/project")}>
               <Nav.Link
                 as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
-                className={path == "/project" ? "nav-active" : "not-active"} 
+                className={path == "/project" ? "nav-active" : "not-active"}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
@@ -88,13 +87,16 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item
-            onClick={() => setPath("/resume")}>
+            <Nav.Item onClick={() => setPath("/resume")}>
               <Nav.Link
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
-                className={window.location.pathname == "/resume" ? "nav-active" : "not-active"} 
+                className={
+                  window.location.pathname == "/resume"
+                    ? "nav-active"
+                    : "not-active"
+                }
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>

@@ -6,18 +6,20 @@ import Home2 from "./Home2";
 import Type from "./Type";
 
 function Home() {
-  
   const [greet, setMsg] = useState("");
   const hr = new Date(Date.now()).getHours();
 
-    useEffect(() =>{
-      if(hr >= 4 && hr < 12){
-          setMsg("Good Morning")}
-      else if(hr >= 12 && hr < 18){
-          setMsg("Good Afternoon")}
-      else if(hr >= 18 && hr < 22) {setMsg("Good Evening")}
-      else {setMsg("Good Night")}
-    },[hr]);
+  useEffect(() => {
+    if (hr >= 4 && hr < 12) {
+      setMsg("Good Morning");
+    } else if (hr >= 12 && hr < 18) {
+      setMsg("Good Afternoon");
+    } else if (hr >= 18 && hr < 22) {
+      setMsg("Good Evening");
+    } else {
+      setMsg("Good Night");
+    }
+  }, [hr]);
 
   return (
     <section>
@@ -30,7 +32,7 @@ function Home() {
                 Hello There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
-                </span> 
+                </span>
               </h1>
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 {greet}. . .

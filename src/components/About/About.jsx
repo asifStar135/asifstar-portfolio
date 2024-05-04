@@ -5,7 +5,7 @@ import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
-import leetcode from "../../Assets/leetcode.png"
+import leetcode from "../../Assets/leetcode.png";
 import Toolstack from "./Toolstack";
 
 function About() {
@@ -47,10 +47,9 @@ function About() {
         <Toolstack />
 
         <Github />
-        
+
         <span className="purple coding-top"> {" LeetCode "} </span>
         <img src={leetcode} className="leetcode" alt="Leetcode Strake" />
-
       </Container>
     </Container>
   );

@@ -3,15 +3,13 @@ import Typewriter from "typewriter-effect";
 
 function Type() {
   return (
-    <Typewriter 
+    <Typewriter
       options={{
         strings: [
-          "CSE Final Yr Student . .",
-          "MERN Stack Developer . . ",
-          "Competitive Programmer . .",
-          "Open Source Contributor . .",
-          "Backend (NodeJs) Developer . .",
-          "Problem Solver . ."
+          "CSE Final Year Student . . .",
+          "Full Stack Developer . . .",
+          "Data Structure & Algo expert . . .",
+          "Problem Solving Engineer . . .",
         ],
         autoStart: true,
         loop: true,

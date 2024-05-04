@@ -152,7 +152,9 @@ button:focus {
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: var(--imp-text-color) !important;
+  font-family: monospace;
+  font-size: 1rem !important;
 }
 
 .logo {
@@ -206,13 +208,13 @@ button:focus {
   width: 100%;
 }
 
-.nav-active{
+.nav-active {
   color: rgb(186, 19, 186) !important;
   font-weight: 700 !important;
   text-shadow: 0 0 9px #cd5ff8;
 }
 
-.not-active{
+.not-active {
   color: white !important;
 }
 
@@ -451,6 +453,7 @@ button:focus {
 
 .blockquote-footer {
   color: #a588c0 !important;
+  font-size: 22px !important;
 }
 /* --------- */
 /* Projects */
@@ -553,6 +556,46 @@ button:focus {
 /* About */
 /* --------- */
 
+.step-div {
+  background-color: #25173da9;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.step-div .stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25;
+  font-weight: 500;
+}
+.step-div .ant-steps-item-title {
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--imp-text-color) !important;
+}
+.step-div .ant-steps-item-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: white !important;
+}
+.step-div .ant-steps-item-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: gray !important;
+}
+.step-div .ant-steps-item-container {
+  margin: 0.2rem 0;
+}
+
+.step-div .ant-steps span {
+  background-color: var(--imp-text-color) !important;
+}
+
+.step-div .step-parent {
+  width: 80%;
+  margin: 1rem auto;
+}
+
 .about-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -587,9 +630,23 @@ button:focus {
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+.tech-icons:hover > .txt {
+  display: block;
+}
+.tech-icons:hover > .icon {
+  display: none;
+}
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
+}
+
+.tech-icons .txt {
+  display: none;
+  font-size: 25px !important;
+  color: var(--imp-text-color);
+  margin: 2rem 0;
+  text-shadow: 2px 2px 20px #801f95;
 }
 
 .quote-card-view {
@@ -753,14 +810,13 @@ button:focus {
   display: none !important;
 }
 
-
-.coding-top{
+.coding-top {
   font-size: 30px;
   margin-bottom: 1.6rem;
   text-decoration: overline;
 }
-.leetcode{
-    width: 92%;
-    border-radius: 20px;
-    margin-top: 1.4rem;
+.leetcode {
+  width: 92%;
+  border-radius: 20px;
+  margin-top: 1.4rem;
 }

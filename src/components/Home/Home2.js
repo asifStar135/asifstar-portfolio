@@ -2,13 +2,15 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
-import {SiLeetcode} from "react-icons/si"
-import {HiMail} from "react-icons/hi"
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { SiLeetcode } from "react-icons/si";
+import { HiMail } from "react-icons/hi";
+import { FaAngleDoubleRight } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { TbBrandCpp, TbDeviceDesktopCode } from "react-icons/tb";
+import { TbHexagonNumber2 } from "react-icons/tb";
+import { LuHeartHandshake } from "react-icons/lu";
+import { ImPointRight } from "react-icons/im";
 
 function Home2() {
   return (
@@ -17,33 +19,103 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-             THINGS ABOUT <span className="purple"> ME </span>
+              THINGS ABOUT{" "}
+              <span className="purple">
+                <u>ME</u>
+              </span>
             </h1>
             <p className="home-about-body">
-              I am passionate with programming & I have at least learnt
-              something, I think… 🤷‍♂️
+              Hi Everyone, I am <b className="purple">MD Asif Mondal </b>
+              from <b className="purple"> Dankuni, West Bengal, IN.</b>
+              <br /> I'm a final year student pursuing BTech @CSE from{" "}
+              <b className="purple">
+                <a href="https://aliah.ac.in/" style={{ color: "inherit" }}>
+                  Aliah University
+                </a>
+              </b>
+              , NewTown-Kolkata.
               <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript, Java and Python. </b>
-              </i>
+              Additionally, I work as a{" "}
+              <b className="purple">Full Stack Developer </b> at{" "}
+              <b className="purple">
+                <a href="https://ditinex.com" style={{ color: "inherit" }}>
+                  Ditinex Enterprise
+                </a>
+                .
+              </b>
               <br />
               <br />
-              My field of Interest's are &nbsp;
-              <i>
-                <b className="purple"> Fullstack Web development </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Cloud Computing
-                </b>
-              </i>
+              <FaAngleDoubleRight size={35} className="purple" /> I'm a final
+              year <b className="purple">Computer Science </b> student who's all
+              about bringing ideas to life through code, with over{" "}
+              <TbHexagonNumber2 size={25} className="purple" /> years of
+              hands-on experience.{" "}
+              <TbDeviceDesktopCode size={25} className="purple" /> <br />
+              <br />
+              <FaAngleDoubleRight size={35} className="purple" />
+              When I'm not buried in code, you can find me on{" "}
+              <a href="https://leetcode.com" target="_blank" className="purple">
+                Leetcode
+              </a>{" "}
+              tackling <b className="purple">Data Structures and Algorithms </b>{" "}
+              problems with my trusty{" "}
+              <TbBrandCpp size={25} className="purple" />. It's like a puzzle to
+              me - challenging, yet incredibly satisfying when I crack it.{" "}
+              <SiLeetcode size={25} className="purple" />
               <br />
               <br />
-              My technical strengths are <b className="purple">C++</b> - in general problem solving, Javascript libraries like {" "}
-              <b className="purple">Node.js, React.Js and Next.Js </b> - in Web-Dev and <b className="purple">MongoDb</b> for no-sql Database.
-              <br/> <br/>
-              I practice <b className="purple"> DSA </b> on Leetcode, GFG in daily basis to improve my <b className="purple">problem solving skills</b> and <b className="purple">Data Structures & Algorithm</b> knowledge. Also appear in <b className="purple"> Coding Contests</b> to test myself in time-bounded situation.
+              <FaAngleDoubleRight size={35} className="purple" />
+              So, if you're looking for someone who's not just passionate about
+              coding but loves a good challenge as well, you've come to the
+              right place. Let's collaborate and make some digital magic
+              together! <LuHeartHandshake size={25} className="purple" />
+              <br />
+              <br />
+              <br />
+              Apart from coding, some other activities that I love to do!
             </p>
+            <ul>
+              <li
+                className="about-activity"
+                style={{ fontSize: "20px", margin: "6px 0" }}
+              >
+                <ImPointRight
+                  style={{ marginRight: "1rem" }}
+                  className="purple"
+                  size={27}
+                />{" "}
+                Photography
+              </li>
+              <li
+                className="about-activity"
+                style={{ fontSize: "20px", margin: "6px 0" }}
+              >
+                <ImPointRight
+                  style={{ marginRight: "1rem" }}
+                  className="purple"
+                  size={27}
+                />{" "}
+                Listening to Music
+              </li>
+              <li
+                className="about-activity"
+                style={{ fontSize: "20px", margin: "6px 0" }}
+              >
+                <ImPointRight
+                  style={{ marginRight: "1rem" }}
+                  className="purple"
+                  size={27}
+                />{" "}
+                Travelling
+              </li>
+            </ul>
+            <br />
+
+            <p style={{ color: "rgb(155 126 172)", fontSize: "22px" }}>
+              "Planning to make <span className="purple"> REST </span> of my
+              Life, the <span className="purple"> BEST </span> of my Life"{" "}
+            </p>
+            <footer className="blockquote-footer"> Me </footer>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -75,7 +147,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <SiLeetcode/>
+                  <SiLeetcode />
                 </a>
               </li>
               <li className="social-icons">

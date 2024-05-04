@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import funmedia from "../../Assets/Projects/funmedia.png"
-import crud from "../../Assets/Projects/crud.png"
-import foodmart from "../../Assets/Projects/foodmart.png"
-import weather from "../../Assets/Projects/weather.png"
-import userApi from "../../Assets/Projects/user-api.png"
-
+import funmedia from "../../Assets/Projects/funmedia.png";
+import crud from "../../Assets/Projects/crud.png";
+import foodmart from "../../Assets/Projects/foodmart.png";
+import weather from "../../Assets/Projects/weather.png";
+import userApi from "../../Assets/Projects/user-api.png";
 
 function Projects() {
   return (
@@ -47,7 +46,7 @@ function Projects() {
               isBlog={false}
               title="User Authentication API"
               description="This is a well-structured (Node + Express).Js API collection for creating any user related application. This API contains forgot-password functionality that works with a verification link and changes the password. Also updating the details are also supported."
-              ghLink="https://github.com/asifStar135/User-Authentication-API"    
+              ghLink="https://github.com/asifStar135/User-Authentication-API"
             />
           </Col>
 
@@ -69,7 +68,7 @@ function Projects() {
               title="Food-Mart"
               description="This is a very basic React.Js UI for a restaurant specifying the different types of menu. I've used a static API and classified the items according to its category - Breakfast, Lunch, Evening and Dinner."
               ghLink="https://github.com/asifStar135/FoodMart"
-              demoLink="https://foodmart-hacto.netlify.app/" 
+              demoLink="https://foodmart-hacto.netlify.app/"
             />
           </Col>
         </Row>
