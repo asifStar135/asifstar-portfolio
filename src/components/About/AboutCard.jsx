@@ -31,14 +31,14 @@ function AboutCard() {
 
   const experience = [
     {
+      title: "Full Stack Developer",
+      subTitle: "Nov'23 - Sept'24",
+      description: "Ditinex Enterprise",
+    },
+    {
       title: "Backend Developer Intern",
       subTitle: "March'23 - July'23",
       description: "Nashbud Inc.",
-    },
-    {
-      title: "Full Stack Developer",
-      subTitle: "Nov'23 - Current",
-      description: "Ditinex Enterprise",
     },
   ];
 

@@ -4,13 +4,15 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { SiLeetcode } from "react-icons/si";
-import { HiMail } from "react-icons/hi";
+import { HiAcademicCap, HiMail } from "react-icons/hi";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { TbBrandCpp, TbDeviceDesktopCode } from "react-icons/tb";
 import { TbHexagonNumber2 } from "react-icons/tb";
 import { LuHeartHandshake } from "react-icons/lu";
 import { ImPointRight } from "react-icons/im";
+import { MdWeb } from "react-icons/md";
+import { IoLogoNodejs } from "react-icons/io";
 
 function Home2() {
   return (
@@ -27,34 +29,64 @@ function Home2() {
             <p className="home-about-body">
               Hi Everyone, I am <b className="purple">MD Asif Mondal </b>
               from <b className="purple"> Dankuni, West Bengal, IN.</b>
-              <br /> I'm a final year student pursuing BTech @CSE from{" "}
+              <br /> As an aspiring Software Engineer, I love bringing ideas to
+              life through code, with over{" "}
+              <TbHexagonNumber2 size={25} className="purple" /> years of
+              hands-on experience.
+              {/* graduated in BTech @CSE from{" "}
               <b className="purple">
                 <a href="https://aliah.ac.in/" style={{ color: "inherit" }}>
                   Aliah University
                 </a>
               </b>
-              , NewTown-Kolkata.
+              , NewTown-Kolkata. */}
               <br />
-              Additionally, I work as a{" "}
-              <b className="purple">Full Stack Developer </b> at{" "}
-              <b className="purple">
-                <a href="https://ditinex.com" style={{ color: "inherit" }}>
-                  Ditinex Enterprise
-                </a>
-                .
-              </b>
+              I am currently looking for new opportunities where I can add
+              values based on my skillset and experience.
               <br />
-              <br />
-              <FaAngleDoubleRight size={35} className="purple" /> I'm a final
-              year <b className="purple">Computer Science </b> student who's all
-              about bringing ideas to life through code, with over{" "}
-              <TbHexagonNumber2 size={25} className="purple" /> years of
-              hands-on experience.{" "}
-              <TbDeviceDesktopCode size={25} className="purple" /> <br />
               <br />
               <FaAngleDoubleRight size={35} className="purple" />
-              When I'm not buried in code, you can find me on{" "}
-              <a href="https://leetcode.com" target="_blank" className="purple">
+              Worked as a Fullstack MERN Developer at{" "}
+              <b className="purple">
+                <a href="https://ditinex.com/" style={{ color: "inherit" }}>
+                  Ditinex Enterprise
+                </a>
+              </b>{" "}
+              where I was responsible for developing optimised and functional
+              full-stack web-apps. <MdWeb size={25} className="purple" />
+              <br />
+              <br />
+              <FaAngleDoubleRight size={35} className="purple" />
+              Also had been a part of the backend team of{" "}
+              <b className="purple">
+                <a href="https://nashbud.com/" style={{ color: "inherit" }}>
+                  Nashbud Inc
+                </a>
+              </b>{" "}
+              as an intern and developed RESTful APIs and worked closely with
+              frontend developers. <IoLogoNodejs size={25} className="purple" />
+              <br />
+              <br />
+              <FaAngleDoubleRight size={35} className="purple" /> I'm an
+              Engineer in <b className="purple">Computer Science </b> graduated
+              from{" "}
+              <b className="purple">
+                <a href="https://aliah.ac.in/" style={{ color: "inherit" }}>
+                  Aliah University
+                </a>
+              </b>
+              , where I build my strength in CS fundamentals like OOPs, DBMS,
+              Networking etc.
+              <HiAcademicCap size={25} className="purple" />
+              <br />
+              <br />
+              <FaAngleDoubleRight size={35} className="purple" />
+              When I'm not buried in "dev", you can find me on{" "}
+              <a
+                href="https://leetcode.com/asif_star_135"
+                target="_blank"
+                className="purple"
+              >
                 Leetcode
               </a>{" "}
               tackling <b className="purple">Data Structures and Algorithms </b>{" "}
