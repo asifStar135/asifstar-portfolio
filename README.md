@@ -27,4 +27,3 @@ Once you have installed the dependencies, you can start the development server:
 ```bash
 npm start
 ```
-
