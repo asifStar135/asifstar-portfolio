@@ -83,14 +83,17 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                My works
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item onClick={() => setPath("/resume")}>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                target="_blank"
+                to={
+                  "https://drive.google.com/file/d/1WvLYD8iN3SL7AZKMBdtU71B4cejMWvDR/view?usp=sharing"
+                }
                 onClick={() => updateExpanded(false)}
                 className={
                   window.location.pathname == "/resume"

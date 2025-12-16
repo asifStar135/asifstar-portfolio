@@ -21,7 +21,7 @@ Welcome to my portfolio website! This project showcases my skills, projects, and
 In the about section, you'll find a brief introduction about me, highlighting my background, interests, and skills.
 
 ![About Section Screenshot](/src/Assets/about-web.png)
- 
+
 ## Projects
 
 Explore the Projects section to see some of my noteworthy projects. Each project comes with a description, technologies used, and a link to the live demo or GitHub repository.
@@ -58,3 +58,4 @@ Once you have installed the dependencies, you can start the development server:
 
 ```bash
 npm start
+```
