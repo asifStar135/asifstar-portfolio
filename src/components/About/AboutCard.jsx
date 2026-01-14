@@ -12,39 +12,6 @@ const { Step } = Steps;
 
 function AboutCard() {
   const [isAcademics, setIsAcademics] = useState(false);
-  const academics = [
-    {
-      title: "BTech - CSE",
-      subTitle: "Aliah University (2020 - 24)",
-      description:
-        "Completed my degree in Computer Science, focusing on programming, algorithms and software development. Built multiple projects and strengthened my core engineering skills.",
-    },
-    {
-      title: "HS - PCM",
-      subTitle: "Dhaniakhali MH Vidyamandir (2018 - 20)",
-      description:
-        "Studied Physics, Chemistry and Mathematics with strong interest in problem-solving. Built a solid foundation in analytical and logical thinking.",
-    },
-    {
-      title: "Secondary - X",
-      subTitle: "Palasi HS Vidyamandir (2018)",
-      description:
-        "Completed secondary education with a focus on science and basic mathematics. Developed early interest in technology and computers.",
-    },
-  ];
-
-  const experience = [
-    {
-      title: "Full Stack Developer",
-      subTitle: "Nov'23 - Sept'24",
-      description: "Ditinex Enterprise",
-    },
-    {
-      title: "Backend Developer Intern",
-      subTitle: "March'23 - July'23",
-      description: "Nashbud Inc.",
-    },
-  ];
 
   return (
     <Card className="quote-card-view">

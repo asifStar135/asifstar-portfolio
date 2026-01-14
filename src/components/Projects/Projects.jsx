@@ -13,40 +13,60 @@ const projectData = [
     title: "MotoConnect - Used bike platform",
     image: MotoConnect,
     description:
-      "A platform for buying and selling used motorbikes build with Mordern technologies. Helping owners to sell their bikes and customers to buy their dream bike.",
+      "A used vehicle marketplace developed using NextJs and Springboot. Helping users to find second hand bikes of their choice and owners to get the best deal for their vehicles. Features : Vehicle recommendation, Deal alerts, Price bidding and many more.",
     github: "https://github.com/asifStar135/MotoConnect",
+    techstack: [
+      "NextJs",
+      "SpringBoot",
+      "Typescript",
+      "TailwindCSS",
+      "JWT",
+      "Postgresql",
+      "AWS",
+    ],
     live: null,
-  },
-  {
-    title: "Flav-Ur - Recipe Companion",
-    image: flavur,
-    description:
-      "Flav-ur is a full-stack recipe discovery and cookbook app built using Next.js, TypeScript, Tailwind CSS, and MongoDB. It allows users to search, save, and manage recipes while adding custom notes for a personalized cooking experience.",
-    github: "https://github.com/asifStar135/flav-ur",
-    live: "https://flav-ur-asif.vercel.app/",
   },
   {
     title: "QuickDrive - Car Rental",
     image: quickDrive,
     description:
-      "A fullstack car rental platform built using MERN. Helping tourists to book a car for fun trips and also helping car owners to find customers to rent their cars.",
+      "A car rental platform built using MERN helping tourists to rent cars for road trips in a hassle free way. This helps car owners monetize their cars by listing it. Feature : Concurent Booking, Search available cars based on location & date and lot more to come.",
     github: "https://github.com/asifStar135/QuickDrive---Car-rental",
-    live: "https://car-rental-pi-amber.vercel.app/",
+    techstack: [
+      "ReactJs",
+      "NodeJs",
+      "ExpressJs",
+      "MongoDB",
+      "JWT",
+      "TailwindCSS",
+    ],
+    live: "https://car-rental-mdasif.vercel.app/",
+  },
+  {
+    title: "Flav-Ur - Recipe Companion",
+    image: flavur,
+    description:
+      "Flav-ur is a full-stack recipe companion web-app dedicated to food enthusiasts.It allows users to search millions of recipes, build custom cookbook, and manage recipes while adding custom notes for a personalized cooking experience.",
+    github: "https://github.com/asifStar135/flav-ur",
+    techstack: ["NextJs", "Typescript", "Clerk-auth", "MongoDB", "TailwindCSS"],
+    live: "https://flav-ur-asif.vercel.app/",
   },
   {
     title: "Funmedia - Social web-app",
     image: funmedia,
     description:
-      "A fullstack social app built using MERN with bootstrap, JWT authentication and bcrypt password hashing. A User can creat-read-update-delete their account as well as post images, like on other posts and many more stuffs. For media stuff I've used cloudinary.",
+      "A full-stack social media application to share your thoughts and connect with new peoples. Feature : Like, comment, share and much more.",
     github: "https://github.com/asifStar135/FunMedia_MERN",
+    techstack: ["ReactJs", "NodeJs", "ExpressJs", "MongoDB", "Bootstrap"],
     live: null,
   },
   {
     title: "CRUD Application",
     image: crud,
     description:
-      "This is my first MERN project which is built on the basic DB operatioins - Create-Read-Update-Delete. Here you can create yout account with profile picture and bio along with hashed password, update all these and find out other users in the network.",
+      "This is my first MERN project which is built on the basic operatioins - Create-Read-Update-Delete. Here you can create yout account with profile picture and bio along with hashed password, update all these and find out other users in the network.",
     github: "https://github.com/asifStar135/crud-app",
+    techstack: ["ReactJs", "NodeJs", "ExpressJs", "MongoDB", "Bootstrap"],
     live: null,
   },
 ];
@@ -72,6 +92,7 @@ function Projects() {
                 description={project.description}
                 github={project.github}
                 live={project.live}
+                techstack={project.techstack}
               />
             </Col>
           ))}

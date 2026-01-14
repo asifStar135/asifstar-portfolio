@@ -1,16 +1,14 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import { BiLink } from "react-icons/bi";
 import { FiExternalLink } from "react-icons/fi";
 
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
+      <Card.Body style={{ paddingBottom: "5px" }}>
         <Card.Title style={{ fontWeight: 600, marginBottom: "1.5rem" }}>
           {props.title}
         </Card.Title>
@@ -33,6 +31,20 @@ function ProjectCards(props) {
           {props.live ? "Checkout" : "Live soon..."} &nbsp;
           <FiExternalLink />
         </Button>
+        <div className="d-flex flex-wrap justify-content-center mt-3 gap-1">
+          {props.techstack?.map((tech) => (
+            <div
+              className="tech-icons"
+              style={{
+                margin: "5px 0",
+                padding: "2px 10px",
+                fontSize: 14,
+              }}
+            >
+              {tech}
+            </div>
+          ))}
+        </div>
       </Card.Body>
     </Card>
   );
